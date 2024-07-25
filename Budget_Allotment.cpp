@@ -7,7 +7,7 @@ int main() {
     cin >> T;
 
     while (T--) {
-        int n, min_value; // Renamed min to min_value to avoid conflict
+        int n, min_value;
         cin >> n >> min_value;
         vector<int> v(n);
         for (int i = 0; i < n; i++) {
@@ -20,10 +20,9 @@ int main() {
         for (int i = 0; i < n; i++) {
             total += v[i];
             if (total >= min_value * (i + 1)) {
-                max_elements = i + 1; // Update max_elements
-            }
+                max_elements = i + 1;}
         }
-        cout << max_elements << endl;
+        cout << max_elements << "\n";
     }
 
     return 0;
