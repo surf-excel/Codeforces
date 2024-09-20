@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 #define int long long int
-#define vi vector<int>
+#define vi vector<string>
 #define read(a) for(auto &i: a) cin>>i
 #define mod 1000000007
 #define nline '\n'
@@ -11,9 +11,13 @@ cin.tie(NULL);
 int t=1;
 cin>>t;
 while(t--){
-int n,sum=0; cin>>n;
-vi a(n); read(a);
-for (int i=0; i<n; i++) sum +=(i%2==0?a[i]:-a[i]);
-cout<<sum<<nline;
+    int n; cin >> n;
+    string s; string v = "aeiou";
+    for (int i = 0; i < 5; i++) {
+        for (int j = 0; j < n / 5 + (i < n % 5); j++) {
+            s += v[i];
+            }
+        }
+        cout<<s<<nline;
 }
 return 0;}

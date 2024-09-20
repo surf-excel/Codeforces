@@ -11,9 +11,14 @@ cin.tie(NULL);
 int t=1;
 cin>>t;
 while(t--){
-int n,sum=0; cin>>n;
-vi a(n); read(a);
-for (int i=0; i<n; i++) sum +=(i%2==0?a[i]:-a[i]);
-cout<<sum<<nline;
-}
+int h, x, y; cin>>h>>x>>y;
+        int n= h-y;
+        if (n == 0) {
+            cout << "1" << nline;
+        } else {
+            int m = n/x;
+            cout << (n % x == 0 ? m + 1 : m + 2)<<nline;
+        }
+    }
+    return 0;
 return 0;}

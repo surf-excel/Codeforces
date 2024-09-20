@@ -11,9 +11,8 @@ cin.tie(NULL);
 int t=1;
 cin>>t;
 while(t--){
-int n,sum=0; cin>>n;
-vi a(n); read(a);
-for (int i=0; i<n; i++) sum +=(i%2==0?a[i]:-a[i]);
-cout<<sum<<nline;
+int x,y; cin>>x>>y;
+if(x<y) cout<<x<<" "<<y<<nline;
+else cout<<y<<" "<<x<<nline;
 }
 return 0;}

@@ -11,7 +11,7 @@ cin.tie(NULL);
 int t=1;
 cin>>t;
 while(t--){
-int a=1e9, b=1e9;
+int a=1e9, b=1e9; 
 cin>>a>>b;
 cout<<b - a<<nline;
 }

@@ -8,12 +8,6 @@ using namespace std;
 signed main() {
 ios_base::sync_with_stdio(false);
 cin.tie(NULL);
-int t=1;
-cin>>t;
-while(t--){
-int n,sum=0; cin>>n;
-vi a(n); read(a);
-for (int i=0; i<n; i++) sum +=(i%2==0?a[i]:-a[i]);
-cout<<sum<<nline;
-}
+int a,b; cin>>a>>b;
+cout<<(a*b)/2;
 return 0;}
