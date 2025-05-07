@@ -12,10 +12,11 @@ int t=1;
 cin>>t;
 while(t--){
 int n; cin>>n;
-vi arr(n); read(arr);
-sort(arr.begin(),arr.end());
-int mini,maxi,sum;
-mini=arr[0]; maxi=arr[n-1];
-sum=(maxi-mini)*(n-1);
-cout<<sum<<nline;}
+int r=n%7;
+int x=7-r;
+int last= n%10;
+if(n%7==0) cout<<n<<nline;
+else if(last+x<10) cout<<n+x<<nline;
+else  cout<<n-r<<nline;
+}
 return 0;}

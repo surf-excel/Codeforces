@@ -11,11 +11,7 @@ cin.tie(NULL);
 int t=1;
 cin>>t;
 while(t--){
-int n; cin>>n;
-vi arr(n); read(arr);
-sort(arr.begin(),arr.end());
-int mini,maxi,sum;
-mini=arr[0]; maxi=arr[n-1];
-sum=(maxi-mini)*(n-1);
-cout<<sum<<nline;}
+int n; cin>>n; n+=1;
+cout<<(n+1)/10<<nline;
+}
 return 0;}

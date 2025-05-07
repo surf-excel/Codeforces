@@ -12,10 +12,21 @@ int t=1;
 cin>>t;
 while(t--){
 int n; cin>>n;
-vi arr(n); read(arr);
-sort(arr.begin(),arr.end());
-int mini,maxi,sum;
-mini=arr[0]; maxi=arr[n-1];
-sum=(maxi-mini)*(n-1);
-cout<<sum<<nline;}
+string s; cin>>s;
+map<char,int> m;
+bool found=false;
+for(int i=0; i<n; i++){
+    m[s[i]]++;
+    char c=s[i];
+    while(c==s[i]){
+        i++;
+    } i--;
+    if(m[c]>1){
+        found=true;
+        break;
+    }
+}
+if(found) cout<<"NO"<<nline;
+else cout<<"YES"<<nline;
+}
 return 0;}

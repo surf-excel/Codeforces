@@ -12,10 +12,17 @@ int t=1;
 cin>>t;
 while(t--){
 int n; cin>>n;
-vi arr(n); read(arr);
-sort(arr.begin(),arr.end());
-int mini,maxi,sum;
-mini=arr[0]; maxi=arr[n-1];
-sum=(maxi-mini)*(n-1);
-cout<<sum<<nline;}
+for(int i=1;;i++){
+    if(i%3==0 || i%10==3){
+        continue;
+    }
+    else{
+        --n;
+        if(n==0){
+            cout<<i<<nline;
+            break;
+        }
+    }
+}
+}
 return 0;}
